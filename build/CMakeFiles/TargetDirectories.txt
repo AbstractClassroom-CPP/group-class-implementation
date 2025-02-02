@@ -1,0 +1,3 @@
+/Users/nathan/github/group-class-implementation/build/CMakeFiles/GroupDriver.dir
+/Users/nathan/github/group-class-implementation/build/CMakeFiles/edit_cache.dir
+/Users/nathan/github/group-class-implementation/build/CMakeFiles/rebuild_cache.dir
