@@ -6,6 +6,13 @@
 
 using namespace std;
 
+Group::Group() {
+    size = 0;
+    operationTable = nullptr;
+    inverses = nullptr;
+    identity = -1;
+}
+
 Group::Group(int** table, int n) {
     if (n <= 0) {
         throw invalid_argument("Invalid group size.");
@@ -177,3 +184,35 @@ bool Group::operator!=(const Group& other) const {
 }
 
 
+Group& Group::operator=(const Group& other) {
+    if (this == &other) return *this; // Self-assignment check
+
+    // Free existing memory
+    for (int i = 0; i < size; ++i) {
+        delete[] operationTable[i];
+    }
+    delete[] operationTable;
+    delete[] inverses;
+
+    // Copy new size
+    size = other.size;
+
+    // Allocate new operation table
+    operationTable = new int*[size];
+    for (int i = 0; i < size; ++i) {
+        operationTable[i] = new int[size];
+        for (int j = 0; j < size; ++j) {
+            operationTable[i][j] = other.operationTable[i][j];
+        }
+    }
+
+    // Copy inverses
+    inverses = new int[size];
+    for (int i = 0; i < size; ++i) {
+        inverses[i] = other.inverses[i];
+    }
+
+    identity = other.identity;
+
+    return *this;
+}

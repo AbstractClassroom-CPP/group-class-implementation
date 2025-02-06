@@ -31,6 +31,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 # Add the Parser executable
 add_executable(GroupDriver
     src/Group/Group.cpp
+    src/Group/CyclicGroup.cpp
     src/main.cpp
 )
 

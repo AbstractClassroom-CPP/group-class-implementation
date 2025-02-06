@@ -4,9 +4,9 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/nathan/github/group-class-implementation/include
+CXX_INCLUDES = -I/Users/nathanrussell/github/group-class-implementation/include
 
-CXX_FLAGSarm64 = -O3 -DNDEBUG -O3 -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1
+CXX_FLAGSarm64 = -O3 -DNDEBUG -O3 -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
 
-CXX_FLAGS = -O3 -DNDEBUG -O3 -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1
+CXX_FLAGS = -O3 -DNDEBUG -O3 -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
 

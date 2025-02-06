@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/bin/cmake
+CMAKE_COMMAND = /Applications/CMake.app/Contents/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/bin/cmake -E rm -f
+RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/nathan/github/group-class-implementation
+CMAKE_SOURCE_DIR = /Users/nathanrussell/github/group-class-implementation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/nathan/github/group-class-implementation
+CMAKE_BINARY_DIR = /Users/nathanrussell/github/group-class-implementation
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GroupDriver.dir/depend.make
@@ -75,44 +75,60 @@ CMakeFiles/GroupDriver.dir/codegen:
 CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.o: CMakeFiles/GroupDriver.dir/flags.make
 CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.o: src/Group/Group.cpp
 CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.o: CMakeFiles/GroupDriver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathan/github/group-class-implementation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.o -MF CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.o.d -o CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.o -c /Users/nathan/github/group-class-implementation/src/Group/Group.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathanrussell/github/group-class-implementation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.o -MF CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.o.d -o CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.o -c /Users/nathanrussell/github/group-class-implementation/src/Group/Group.cpp
 
 CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nathan/github/group-class-implementation/src/Group/Group.cpp > CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nathanrussell/github/group-class-implementation/src/Group/Group.cpp > CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.i
 
 CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nathan/github/group-class-implementation/src/Group/Group.cpp -o CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nathanrussell/github/group-class-implementation/src/Group/Group.cpp -o CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.s
+
+CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.o: CMakeFiles/GroupDriver.dir/flags.make
+CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.o: src/Group/CyclicGroup.cpp
+CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.o: CMakeFiles/GroupDriver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathanrussell/github/group-class-implementation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.o -MF CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.o.d -o CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.o -c /Users/nathanrussell/github/group-class-implementation/src/Group/CyclicGroup.cpp
+
+CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nathanrussell/github/group-class-implementation/src/Group/CyclicGroup.cpp > CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.i
+
+CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nathanrussell/github/group-class-implementation/src/Group/CyclicGroup.cpp -o CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.s
 
 CMakeFiles/GroupDriver.dir/src/main.cpp.o: CMakeFiles/GroupDriver.dir/flags.make
 CMakeFiles/GroupDriver.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/GroupDriver.dir/src/main.cpp.o: CMakeFiles/GroupDriver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathan/github/group-class-implementation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GroupDriver.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GroupDriver.dir/src/main.cpp.o -MF CMakeFiles/GroupDriver.dir/src/main.cpp.o.d -o CMakeFiles/GroupDriver.dir/src/main.cpp.o -c /Users/nathan/github/group-class-implementation/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathanrussell/github/group-class-implementation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GroupDriver.dir/src/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GroupDriver.dir/src/main.cpp.o -MF CMakeFiles/GroupDriver.dir/src/main.cpp.o.d -o CMakeFiles/GroupDriver.dir/src/main.cpp.o -c /Users/nathanrussell/github/group-class-implementation/src/main.cpp
 
 CMakeFiles/GroupDriver.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GroupDriver.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nathan/github/group-class-implementation/src/main.cpp > CMakeFiles/GroupDriver.dir/src/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nathanrussell/github/group-class-implementation/src/main.cpp > CMakeFiles/GroupDriver.dir/src/main.cpp.i
 
 CMakeFiles/GroupDriver.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GroupDriver.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nathan/github/group-class-implementation/src/main.cpp -o CMakeFiles/GroupDriver.dir/src/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nathanrussell/github/group-class-implementation/src/main.cpp -o CMakeFiles/GroupDriver.dir/src/main.cpp.s
 
 # Object files for target GroupDriver
 GroupDriver_OBJECTS = \
 "CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.o" \
+"CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.o" \
 "CMakeFiles/GroupDriver.dir/src/main.cpp.o"
 
 # External object files for target GroupDriver
 GroupDriver_EXTERNAL_OBJECTS =
 
 GroupDriver: CMakeFiles/GroupDriver.dir/src/Group/Group.cpp.o
+GroupDriver: CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.o
 GroupDriver: CMakeFiles/GroupDriver.dir/src/main.cpp.o
 GroupDriver: CMakeFiles/GroupDriver.dir/build.make
 GroupDriver: CMakeFiles/GroupDriver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nathan/github/group-class-implementation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable GroupDriver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nathanrussell/github/group-class-implementation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable GroupDriver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GroupDriver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +140,6 @@ CMakeFiles/GroupDriver.dir/clean:
 .PHONY : CMakeFiles/GroupDriver.dir/clean
 
 CMakeFiles/GroupDriver.dir/depend:
-	cd /Users/nathan/github/group-class-implementation && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nathan/github/group-class-implementation /Users/nathan/github/group-class-implementation /Users/nathan/github/group-class-implementation /Users/nathan/github/group-class-implementation /Users/nathan/github/group-class-implementation/CMakeFiles/GroupDriver.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/nathanrussell/github/group-class-implementation && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nathanrussell/github/group-class-implementation /Users/nathanrussell/github/group-class-implementation /Users/nathanrussell/github/group-class-implementation /Users/nathanrussell/github/group-class-implementation /Users/nathanrussell/github/group-class-implementation/CMakeFiles/GroupDriver.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/GroupDriver.dir/depend
 

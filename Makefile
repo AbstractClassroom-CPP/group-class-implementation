@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/bin/cmake
+CMAKE_COMMAND = /Applications/CMake.app/Contents/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/bin/cmake -E rm -f
+RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/nathan/github/group-class-implementation
+CMAKE_SOURCE_DIR = /Users/nathanrussell/github/group-class-implementation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/nathan/github/group-class-implementation
+CMAKE_BINARY_DIR = /Users/nathanrussell/github/group-class-implementation
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/nathan/github/group-class-implementation
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/opt/homebrew/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CMake.app/Contents/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/opt/homebrew/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CMake.app/Contents/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,16 +87,16 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathan/github/group-class-implementation/CMakeFiles /Users/nathan/github/group-class-implementation//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanrussell/github/group-class-implementation/CMakeFiles /Users/nathanrussell/github/group-class-implementation//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathan/github/group-class-implementation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanrussell/github/group-class-implementation/CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathan/github/group-class-implementation/CMakeFiles /Users/nathan/github/group-class-implementation//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanrussell/github/group-class-implementation/CMakeFiles /Users/nathanrussell/github/group-class-implementation//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathan/github/group-class-implementation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanrussell/github/group-class-implementation/CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
@@ -135,6 +135,30 @@ GroupDriver: cmake_check_build_system
 GroupDriver/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupDriver.dir/build.make CMakeFiles/GroupDriver.dir/build
 .PHONY : GroupDriver/fast
+
+src/Group/CyclicGroup.o: src/Group/CyclicGroup.cpp.o
+.PHONY : src/Group/CyclicGroup.o
+
+# target to build an object file
+src/Group/CyclicGroup.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupDriver.dir/build.make CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.o
+.PHONY : src/Group/CyclicGroup.cpp.o
+
+src/Group/CyclicGroup.i: src/Group/CyclicGroup.cpp.i
+.PHONY : src/Group/CyclicGroup.i
+
+# target to preprocess a source file
+src/Group/CyclicGroup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupDriver.dir/build.make CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.i
+.PHONY : src/Group/CyclicGroup.cpp.i
+
+src/Group/CyclicGroup.s: src/Group/CyclicGroup.cpp.s
+.PHONY : src/Group/CyclicGroup.s
+
+# target to generate assembly for a file
+src/Group/CyclicGroup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupDriver.dir/build.make CMakeFiles/GroupDriver.dir/src/Group/CyclicGroup.cpp.s
+.PHONY : src/Group/CyclicGroup.cpp.s
 
 src/Group/Group.o: src/Group/Group.cpp.o
 .PHONY : src/Group/Group.o
@@ -194,6 +218,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... GroupDriver"
+	@echo "... src/Group/CyclicGroup.o"
+	@echo "... src/Group/CyclicGroup.i"
+	@echo "... src/Group/CyclicGroup.s"
 	@echo "... src/Group/Group.o"
 	@echo "... src/Group/Group.i"
 	@echo "... src/Group/Group.s"

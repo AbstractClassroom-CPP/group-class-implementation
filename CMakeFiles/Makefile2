@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/bin/cmake
+CMAKE_COMMAND = /Applications/CMake.app/Contents/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/bin/cmake -E rm -f
+RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/nathan/github/group-class-implementation
+CMAKE_SOURCE_DIR = /Users/nathanrussell/github/group-class-implementation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/nathan/github/group-class-implementation
+CMAKE_BINARY_DIR = /Users/nathanrussell/github/group-class-implementation
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/GroupDriver.dir/clean
 CMakeFiles/GroupDriver.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupDriver.dir/build.make CMakeFiles/GroupDriver.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupDriver.dir/build.make CMakeFiles/GroupDriver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nathan/github/group-class-implementation/CMakeFiles --progress-num=1,2,3 "Built target GroupDriver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nathanrussell/github/group-class-implementation/CMakeFiles --progress-num=1,2,3,4 "Built target GroupDriver"
 .PHONY : CMakeFiles/GroupDriver.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GroupDriver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathan/github/group-class-implementation/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanrussell/github/group-class-implementation/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GroupDriver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathan/github/group-class-implementation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanrussell/github/group-class-implementation/CMakeFiles 0
 .PHONY : CMakeFiles/GroupDriver.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ GroupDriver: CMakeFiles/GroupDriver.dir/rule
 # codegen rule for target.
 CMakeFiles/GroupDriver.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupDriver.dir/build.make CMakeFiles/GroupDriver.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nathan/github/group-class-implementation/CMakeFiles --progress-num=1,2,3 "Finished codegen for target GroupDriver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nathanrussell/github/group-class-implementation/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target GroupDriver"
 .PHONY : CMakeFiles/GroupDriver.dir/codegen
 
 # clean rule for target.

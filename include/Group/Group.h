@@ -1,10 +1,13 @@
+#ifndef GROUP_H
+#define GROUP_H
 
 class Group {
-    private:
+    protected:
         int size;
         int** operationTable; 
         int identity;
         int* inverses;
+
 
         /**
         * @brief Function to verify the closure property of the group
@@ -31,11 +34,15 @@ class Group {
     public:
 
         /**
+         * @brief Default constructor for Group class
+         */
+        Group();
+
+        /**
         * @brief Constructor for Group class
         * @param table Pointer to the operation table
         * @param n Size of the group
         */
-
         Group(int** table, int n);
         /**
         * @brief Copy constructor for Group class
@@ -114,4 +121,5 @@ class Group {
         int operate(int a, int b) const;
 };
 
+#endif // GROUP_H
 
