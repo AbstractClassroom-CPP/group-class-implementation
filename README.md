@@ -52,14 +52,6 @@ Execute the compiled binary:
 ```
 
 
-## **CMake Build Options**
-### **Build in Debug Mode**
-For debugging purposes, build the project in `Debug` mode:
-```sh
-cmake -DCMAKE_BUILD_TYPE=Debug ..
-make
-```
-
 ### **Clean and Rebuild**
 If you need to **rebuild the project from scratch**, run:
 ```sh

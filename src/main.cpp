@@ -18,12 +18,12 @@ int main() {
         Group G_2_6 = C2 + C6;
 
         // create all possible isomorphic comparisons
-        cout << "Is C12 isomorphic to G_2_2_3? " << (C12 == G_2_2_3 ? "YES":"NO") << endl;
-        cout << "Is C12 isomorphic to G_4_3? " << (C12 == G_4_3 ? "YES":"NO") << endl;
-        cout << "Is C12 isomorphic to G_2_6? " << (C12 == G_2_6 ? "YES":"NO") << endl;
-        cout << "Is G_2_2_3 isomorphic to G_4_3? " << (G_2_2_3 == G_4_3 ? "YES":"NO") << endl;
-        cout << "Is G_2_2_3 isomorphic to G_2_6? " << (G_2_2_3 == G_2_6 ? "YES":"NO") << endl;
-        cout << "Is G_4_3 isomorphic to G_2_6? " << (G_4_3 == G_2_6 ? "YES":"NO") << endl;
+        cout << "Is C12 isomorphic to C2+C2+C3? " << (C12 == G_2_2_3 ? "YES":"NO") << endl;
+        cout << "Is C12 isomorphic to C4+C3? " << (C12 == G_4_3 ? "YES":"NO") << endl;
+        cout << "Is C12 isomorphic to C2+C6? " << (C12 == G_2_6 ? "YES":"NO") << endl;
+        cout << "Is C2+C2+C3 isomorphic to C4+C3? " << (G_2_2_3 == G_4_3 ? "YES":"NO") << endl;
+        cout << "Is C2+C2+C3 isomorphic to C2+C6? " << (G_2_2_3 == G_2_6 ? "YES":"NO") << endl;
+        cout << "Is C4+C3 isomorphic to C2+C6? " << (G_4_3 == G_2_6 ? "YES":"NO") << endl;
 
 
 
