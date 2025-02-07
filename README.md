@@ -48,7 +48,7 @@ After compilation, the executable `GroupDriver` will be created inside the `buil
 ### **Step 4: Run the Program**
 Execute the compiled binary:
 ```sh
-./GroupDriver
+./bin/GroupDriver
 ```
 
 
