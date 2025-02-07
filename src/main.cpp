@@ -13,31 +13,18 @@ int main() {
         CyclicGroup C4(4);
         CyclicGroup C6(6);
 
+        Group G_2_2_3 = (C2 + C2) + C3;
+        Group G_4_3 = C4 + C3;
+        Group G_2_6 = C2 + C6;
 
-        if (C12 == (C2 + C2 + C3)) {
-            cout << "Yes - Isomorphic" << endl;
-        } else {
-            cout << "Not Isomorphic" << endl;
-        }
+        // create all possible isomorphic comparisons
+        cout << "Is C12 isomorphic to G_2_2_3? " << (C12 == G_2_2_3 ? "YES":"NO") << endl;
+        cout << "Is C12 isomorphic to G_4_3? " << (C12 == G_4_3 ? "YES":"NO") << endl;
+        cout << "Is C12 isomorphic to G_2_6? " << (C12 == G_2_6 ? "YES":"NO") << endl;
+        cout << "Is G_2_2_3 isomorphic to G_4_3? " << (G_2_2_3 == G_4_3 ? "YES":"NO") << endl;
+        cout << "Is G_2_2_3 isomorphic to G_2_6? " << (G_2_2_3 == G_2_6 ? "YES":"NO") << endl;
+        cout << "Is G_4_3 isomorphic to G_2_6? " << (G_4_3 == G_2_6 ? "YES":"NO") << endl;
 
-        // create all possible isomorphic comparisons   
-        if (C12 == (C3 + C4)) {
-            cout << "Yes - Isomorphic" << endl;
-        } else {
-            cout << "Not Isomorphic" << endl;
-        }
-
-        if (C12 == (C6 + C2)) {
-            cout << "Yes - Isomorphic" << endl;
-        } else {
-            cout << "Not Isomorphic" << endl;
-        }
-
-        if (C12 == (C2 + C6)) {
-            cout << "Yes - Isomorphic" << endl;
-        } else {
-            cout << "Not Isomorphic" << endl;
-        }
 
 
 
